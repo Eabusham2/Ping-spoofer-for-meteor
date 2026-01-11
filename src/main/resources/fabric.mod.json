@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "ping-spoof",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Ping Spoof",
+  "description": "A Meteor Client addon that spoofs ping.",
   "authors": [
-    "seasnail"
+    "Eabusham2"
   ],
   "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "sources": "https://github.com/Eabusham2/Ping-spoofer-for-meteor"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/ping-spoof/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "eabusham2.addon.PingSpoofAddon"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "ping-spoof.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25",
@@ -30,7 +30,9 @@
   },
   "depends": {
     "java": ">=21",
-    "minecraft": ["${mc_version}"],
+    "minecraft": [
+      "${mc_version}"
+    ],
     "meteor-client": "*"
   }
 }
